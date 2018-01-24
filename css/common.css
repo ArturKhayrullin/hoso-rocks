@@ -1,0 +1,24 @@
+@font-face {
+ font-family: "Graphik LCG Regular";
+ src: url("../fonts/Graphik LCG/GraphikLCG-Regular.otf") format("otf");
+}
+
+@font-face {
+ font-family: "Graphik LCG Light";
+ src: url("../fonts/Graphik LCG/GraphikLCG-Light.otf") format("otf");
+}
+
+@font-face {
+ font-family: "Graphik LCG Thin";
+ src: url("../fonts/Graphik LCG/GraphikLCG-Thin.otf") format("otf");
+}
+
+@font-face {
+ font-family: "Graphik LCG Medium";
+ src: url("../fonts/Graphik LCG/GraphikLCG-Medium.otf") format("otf");
+}
+
+@font-face {
+ font-family: "Graphik LCG Semibold";
+ src: url("../fonts/Graphik LCG/GraphikLCG-Semibold.otf") format("otf");
+}
