@@ -28,6 +28,26 @@
  src: url("../fonts/Exodus.otf") format("opentype");
 }
 
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -39,6 +59,7 @@
 :root {
 	font-size:62.5%;
 	font-size:1vw;
+	background:#131313;
 }
 
 body {
@@ -210,12 +231,21 @@ body {
 	text-decoration:none;
 }
 
+a.side_link:hover {
+	text-decoration:underline;
+}
+
+.side_link a:hover {
+	text-decoration:underline;
+}
+
 .side_link a {
 	color:inherit;
 }
 
 .all_works {
 	top:20%;
+	z-index:998;
 }
 
 .navigation_top span {
@@ -225,6 +255,7 @@ body {
 .side_link.navigation_top {
 	transform:rotate(-90deg) translateX(10%);
 	bottom:20%;
+	z-index:998;
 }
 
 
@@ -239,3 +270,100 @@ body {
 	/*min-width:9px;*/
 }
 
+.menu {
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	background:#131313;
+	z-index:999;
+	
+}
+
+.menu .menu_content {
+	font-size:1.32812rem;
+	letter-spacing:0.01500em;
+	position:absolute;
+	left:50.00000%;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.menu a {
+	color:inherit;
+	text-decoration:none;
+	display:block;
+}
+
+.menu .menu_content > *{
+	position:relative;
+	margin-bottom:2vw;
+}
+
+.menu .menu_content > *:last-child{
+	margin-bottom:0;
+}
+
+.menu .menu_content .menu_item .menu_number {
+	left:-4.25781vw;
+	position:absolute;
+	color:#c0c0c0;
+	letter-spacing:0.02500em;
+	font-size:0.82031rem;
+	top:0.5vw;
+	opacity:0;
+	transition:0.3s all ease;
+}
+
+.menu .menu_content a .menu_text {
+	display:inline-block;
+	position:relative;
+}
+
+
+.menu .menu_content a .menu_text:after {
+	content:'';
+	display:block;
+	background:#ffffff;
+	left:0;
+	bottom:-0.2vw;
+	position:absolute;
+	width:0;
+	height:1px;
+	transition:0.3s all ease;
+}
+
+.menu .menu_content a:hover .menu_text:after {
+	width:100%;
+} 
+
+.menu .menu_content a:hover .menu_number {
+	opacity:1;
+}
+
+.menu .privacy_policy {
+	transform-origin: 0% 100%;
+	transform:rotate(-90deg) translateY(50%);
+	text-decoration: underline;
+	font-size:0.70312rem;
+	letter-spacing:0.05000em;
+	position:absolute;
+	bottom:8.12500%;
+	left:6.28906%;
+}
+
+/*.menu_background {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#131313;
+	transform:translateX(-100%) rotate(-45deg);
+	opacity:1;
+	transition:0.7s all;
+	transform-origin: bottom left;
+
+}
+
+.menu_background.visible {
+	transform:translateX(0%) rotate(0deg);
+	opacity:1;
+}*/
