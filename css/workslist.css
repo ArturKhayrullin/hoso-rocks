@@ -1,327 +1,82 @@
-:root {
-	font-size:62.5%; /*10px*/
-}
-
-* {
-	box-sizing:border-box;
-
-}
-
-::-webkit-scrollbar { 
-    display: none; 
-}
-
-body {
-	position:relative;
-	font-family:'Graphik LCG Light';
-	color:#f2f2f0;
-
-}
-
-.wrapper {
-	
-	background:#131313;
-	/*height:100vh;*/
-
-}
-
-.main_grid {
-	
-	height:100vh;
-	max-height:62.50000vw;
-	/*position:fixed;*/
-	width:100%;
-	position:relative;
-}
-
-.main_grid .row {
-	height:25.00000%;
-	display:flex;
-	height:calc((100% - 31.32812vw) / 2);
-}
-
-.main_grid .row:nth-of-type(2) {
-	height:50%;
-	border:1px #2a2a2a solid;
-	border-left:none;
-	border-right:none;
-	box-sizing: border-box;
-	height:31.32812vw;
-}
-
-.main_grid .row .center {
-	border:1px #2a2a2a solid;
-	border-top:none;
-	border-bottom:none;
-	box-sizing:border-box;
-}
-
-.main_grid .row > div {
-	width:20.00000%;
-}
-
-.main_grid .row > div.center {
-	width:60%;
-	position:relative;
-}
-
-.projects-container {
+.workslist {
+	position: relative;
 	width:100%;
 	height:100%;
-	
-}
-
-.project {
-	position:relative;
-	display:block;
-	width:100%;
-	height:100%;
-	position:absolute;
 	overflow:hidden;
-	background:#131313;
+
+}
+
+.workslist .background {
+		background-size:cover;
+	background-repeat: no-repeat;
+	position:absolute;
+	width:100%;
+	height:100%;
 	opacity:0;
-	transition: opacity 1s ease;
+	transition: 1s all ease;
 }
 
-.project.active {
+.workslist .background.visible {
 	opacity:1;
-	z-index:100;
 }
 
-
-
-.project .img {
-	background-position: center center;
-	background-size:cover;
-	background-repeat:no-repeat;
+.workslist .workslist_content {
+	font-size:1.32812rem;
+	letter-spacing:0.01500em;
 	position:absolute;
-	width:66.66667%;
-	height:50%;
-}
-
-.project .img_left {
-	background-image:url(../img/index-page/project_img_left.jpg);
-	opacity:0.75;
-}
-
-
-
-.project .img_right {
-	background-image:url(../img/index-page/project_img_right.jpg);
-	opacity:0.2;
-	bottom:0;
-	right:0;
-}
-
-.project .title {
-	font-size:12.1rem;
-	font-size:8.86719vw;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
-	color:#ffffff;
-	font-family:'Graphik LCG Semibold';
-	margin:0;
-	padding:0;
-	letter-spacing:-0.03500em;
-	text-align:center;
-}
-
-
-
-.logo {
-	position:fixed;
-	font-family:'Exodus - Personal Use Sharpen';
-	font-size:1.92094rem;
-	color:#f2f2f0;
-	text-decoration: none;
-	left:6.28906%;
-	top:8.18750%;
-	font-size:1.40625vw;
-}
-
-.menu_opener {
-	font-family:'Graphik LCG Regular';
-	color:#f2f2f0;
-	font-size:0.82031vw;
-	letter-spacing:0.02500em;
-	cursor:pointer;
-	transform:rotate(-90deg) translate(-50%, 50%);
-
-	position:fixed;
-	right:6.28906%;
-	top:8.18750%;
-	transition:0.5s all ease;
-}
-
-.menu_opener:hover {
-	transform:rotate(-90deg) translate(-0%,50%);
-}
-
-.scroll_down_arrow {
-	position:absolute;
-	width:0.35156vw;
-	left:6.28906%;
-	bottom:8.18750%;
-	cursor:pointer;
-	transition:0.5s all ease;
-	min-width:9px;
-}
-
-.scroll_down_arrow:hover {
-	transform:translateY(50%);
-}
-
-.statistics {
-	position:absolute;
-	right:6.28906%;
-	bottom:8.18750%;
-	cursor:pointer;
-	width:0.58594vw;
-	min-width:15px;
-}
-
-.block2 {
-	position:relative;
-	background:#131313;
-	padding:15.5% 20.00000%;
-	padding-bottom:27.2%;
-}
-
-.block2 .description_title {
-	color:#8a8a8a;
-	font-size:1.12054rem;
-	letter-spacing:0.02500em;
-	margin-bottom:17.628%;
-}
-
-.block2 .description {
-	display:flex;
-	margin-bottom:56.59375%;
-}
-
-.block2 .description > div {
-	width:50%;
-}
-
-.block2 .description .meta {
-	font-size:1.12054rem;
-	letter-spacing:0.02500em;
-	line-height:2.00000;
-}
-
-.block2 .description .meta .project_type {
-	margin-bottom:5.834%;
-}
-
-.block2 .description .meta a {
-	color:inherit;
-	text-decoration: underline;
-}
-
-.block2 .description .text {
-	font-size:1.81422rem;
-	line-height:1.85294;
-	letter-spacing:0.01000em;
-	top:-0.8rem;
-	position:relative;
-}
-
-.block2 .project_images {
-	position:relative;
-	margin-bottom:38.16250%;
-}
-
-.block2 .project_images .img_left {
-	width:66.66667%;
-
-}
-
-.block2 .project_images .img_right {
-	width:43.03385%;
-	position:absolute;
-	right:0;
+	left:50.00000%;
 	top:50%;
 	transform:translateY(-50%);
 }
 
-.block2 .about {
-	display:flex;
-	justify-content: flex-end;
-	flex-wrap:wrap;
-		
-	font-size:1.12054rem;
-	letter-spacing:0.02500em;
-	line-height:2;
-
-}
-
-.block2 .about .about_title {
-	color:#8a8a8a;
-	
-	flex:0 0 100%;
-	margin-bottom:14.67604%;
-}
-
-.block2 .about .about_text {
-	width:50.00000%;
-}
-
-.block2 .about .about_text b {
-	font-family:'Graphik LCG Medium';
-}
-
-.showcase {
-	width:100%;
-	position:relative;
-	background:#1b1b1b;
-	padding:15.35156% 0%;
-}
-
-.showcase img {
-	width:60.00000%;
-	margin:0 auto;
-	margin-bottom:7.73438%;
+.workslist a {
+	color:inherit;
+	text-decoration:none;
 	display:block;
 }
 
-.showcase img.full_width {
-	width:100%;
+.workslist .workslist_content > *{
+	position:relative;
+	margin-bottom:2vw;
 }
 
-.showcase img:last-of-type {
+.workslist .workslist_content > *:last-child{
 	margin-bottom:0;
 }
 
-.nav {
-	display:flex;
+.workslist .workslist_content .menu_item .menu_number {
+	left:-4.25781vw;
+	position:absolute;
+	color:#c0c0c0;
+	letter-spacing:0.02500em;
+	font-size:0.82031rem;
+	top:0.5vw;
+	opacity:0;
+	transition:0.3s all ease;
+}
+
+.workslist .workslist_content a .menu_text {
+	display:inline-block;
+	position:relative;
+}
+
+
+.workslist .workslist_content a .menu_text:after {
+	content:'';
+	display:block;
+	background:#ffffff;
+	left:0;
+	bottom:-0.2vw;
+	position:absolute;
+	width:0;
+	height:1px;
+	transition:0.5s all ease;
+}
+
+.workslist .workslist_content a:hover .menu_text:after {
 	width:100%;
-}
+} 
 
-.nav > a {
-	height:31.17188vw;
-	display:flex;
-	align-items:center;
-	justify-content: center;
-	background-size:cover;
-	background-size:102%;
-	background-position:center center;
-	background-repeat:no-repeat;
-
-	text-decoration: none;
-	color:inherit;
-	width:50%;
-	transition:all 0.5s ease;
-
-}
-
-.nav > a:hover {
-	background-size:105%;
-}
-
-.nav .title {
-	font-size:1.81422rem;
-	font-family:'Graphik LCG Medium';
-
+.workslist .workslist_content a:hover .menu_number {
+	opacity:1;
 }

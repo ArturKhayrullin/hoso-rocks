@@ -54,6 +54,12 @@ $(window).bind('mousewheel', function(event) {
 		});
 		document.body.classList.add("animate-out");
 
+	});
+
+	$('.workslist_content .menu_item').hover(function() {
+		var currentItemIndex=$(this).index();
+		$('.workslist .background').removeClass('visible').removeClass('zoom-in');
+		$('.workslist .background').eq(currentItemIndex).addClass('visible');
 	})	
 });
 
