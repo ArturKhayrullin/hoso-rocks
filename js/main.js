@@ -11,7 +11,17 @@ $(window).bind('mousewheel', function(event) {
         slideToPrevProject();
     }
 });
+
+	$('html').css('font-size',$(window).width()/100 + 'px');
 });
+
+$(window).resize(function() {
+	if ($('.fullheight').height()!=$(window).height()) {
+		$('.fullheight').height($(window).height());
+	}
+});
+
+
 
 function slideToNextProject() {
 	//debugger;
