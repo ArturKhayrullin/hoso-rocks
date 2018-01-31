@@ -60,7 +60,13 @@ $(window).bind('mousewheel', function(event) {
 		var currentItemIndex=$(this).index();
 		$('.workslist .background').removeClass('visible').removeClass('zoom-in');
 		$('.workslist .background').eq(currentItemIndex).addClass('visible');
-	})	
+	});
+
+	// $('.slider button').click(function() {
+	// 	var nextPercentage = ((-100)/5*($(this).closest('.step-container').index()+1))+'%';
+	// 	console.log(nextPercentage);
+	// 	$('.slider').css('transform','translateX('+nextPercentage+')');
+	// });	
 });
 
 $(window).resize(function() {

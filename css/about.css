@@ -1,0 +1,56 @@
+.grid .row .center h1 {
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	font-size:4.06250rem;
+	line-height:4.06250rem;
+}
+
+.grid .row .center p {
+	position:absolute;
+	font-size:1.32812rem;
+	line-height:1.47059;
+	letter-spacing:0.02500em;
+	width:25vw;
+	top:43.89000%;
+	right:11.71875%;
+}
+
+.block2 .title {
+	font-size:1.32812rem;
+	letter-spacing:0.02500em;
+	margin-bottom:3.25521%;
+
+}
+
+.block2 .description {
+	font-size:0.82031rem;
+	letter-spacing:0.02500em;
+	line-height:1.76190;
+	color:#cacaca;
+
+}
+
+.block2 .center > div {
+	position:absolute;
+	width:50%;
+	padding-right:2.45%;
+	margin-top:-0.6%;
+}
+
+.block2 .methodology {
+	position:absolute;
+	right:0;
+	bottom:21.87500%;
+}
+
+.block2 .become_a_part {
+	text-decoration:underline;
+	font-size:0.82031rem;
+	letter-spacing:0.02500em;
+	line-height:0.82031rem;
+	color:inherit;
+	position:absolute;
+	bottom:0;
+}

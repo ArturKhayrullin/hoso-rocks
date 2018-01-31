@@ -1,0 +1,48 @@
+.small_title {
+	font-size:0.82031rem;
+	letter-spacing:0.02500em;
+	color:#cacaca;
+	margin-top:-0.2vw;
+	margin-bottom:1.37812vw;
+}
+
+h1 {
+	font-size:2.53906rem;
+	margin:0;
+	letter-spacing:0;
+	margin-bottom:6.80312vw;
+}
+
+.pricelist .service {
+	display:flex;
+	font-size:0.82031rem;
+	line-height:1.95238;
+	letter-spacing:0.02500rem;
+	margin-bottom:3.31875vw;
+}
+
+.pricelist .service:last-of-type {
+	margin:0;
+}
+
+.pricelist .service .price {
+	flex-basis: 16.79688%;
+}
+
+.pricelist .service .price_description {
+	color:#c0c0c0;
+}
+
+.block2 {
+	width:60%;
+	margin:0 auto;
+	padding:calc((100vh - 31.32812vw) / 2) 0px;
+}
+
+.pricelist {
+	margin-bottom:10.8125vw;
+}
+
+.pricelist:last-of-type {
+	margin:0;
+}

@@ -1,0 +1,43 @@
+.grid .row .center h1 {
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	font-size:2.53906rem;
+	line-height:2.53906rem;
+}
+
+.grid .row .center p {
+	padding:0;
+	margin:0;
+	position:absolute;
+	font-size:0.82031rem;
+	line-height:1.90476;
+	letter-spacing:0.02500em;
+	width:30.00000vw;
+	bottom:-1.5%;
+	right:0;
+	padding-right:2%;
+}
+
+.block2 {
+	padding:0% 20%;
+	padding-bottom:calc((100vh - 31.32812vw) / 2);
+
+}
+
+.block2 .positions-list {
+	font-size:2.61719rem;
+	letter-spacing:0;
+	line-height:1.68657;
+	margin-bottom:36.45800%;
+}
+
+
+.block2 .become_a_part {
+	text-decoration:underline;
+	font-size:0.82031rem;
+	letter-spacing:0.02500em;
+	line-height:0.82031rem;
+	color:inherit;
+}

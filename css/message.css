@@ -1,0 +1,23 @@
+.links_container a {
+	font-size:2.53906rem;
+	color:inherit;
+	text-decoration:none;
+}
+
+.links_container a:hover {
+	text-decoration:underline;
+}
+
+.links_container .or {
+    font-size: 0.82031rem;
+    color: #c0c0c0;
+    margin-left: 10.44062vw;
+    margin-right: 4.36406vw;
+}
+
+.links_container {
+	position:absolute;
+	left:19.40104%;
+	top:50%;
+	transform:translateY(-50%);
+}

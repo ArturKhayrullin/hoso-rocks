@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/start-new.css">
 </head>
 
 <body class="animate-in">
@@ -24,26 +25,22 @@
     <div class="wrapper">
     <div id="menu" class="menu fullheight" style="display:none">
         <div class="menu_content">
-<!--             <div class="menu_title">
+            <div class="menu_title">
                 Meet Buro
-            </div> -->
-            <a href="./about.html" class="menu_item">
-                <div class="menu_number">00</div>
-                <div class="menu_text">Meet Buro</div>
-            </a>            
+            </div>
             <a href="./workslist.html" class="menu_item">
                 <div class="menu_number">01</div>
                 <div class="menu_text">Works</div>
             </a>
-            <a href="./services.html" class="menu_item">
+            <a href="#" class="menu_item">
                 <div class="menu_number">02</div>
                 <div class="menu_text">Services</div>
             </a>
-            <a href="./contacts.html" class="menu_item">
+            <a href="#" class="menu_item">
                 <div class="menu_number">03</div>
                 <div class="menu_text">Contacts</div>
             </a>
-            <a href="./message.html" class="menu_item">
+            <a href="#" class="menu_item">
                 <div class="menu_number">04</div>
                 <div class="menu_text">Message</div>
             </a>                                                                                            
@@ -52,14 +49,15 @@
         <a href="#" class="privacy_policy">
             PRIVACY POLICY
         </a>
-    </div>        
+    </div>          
             <a class="logo" href="./">
                 H.
             </a>
             <div id="menu_toggle" class="menu_opener side_link">
                 menu
-            </div>        
-        <div class="grid background_grid">
+            </div>
+      
+        <div class="grid background_grid fullheight">
             <div class="row">
                 <div class="left">
                 </div>
@@ -84,8 +82,9 @@
                 <div class="right">
                 </div>
             </div>  
-        </div>                                
-        <div class="grid">
+        </div>    
+
+        <div class="grid fullheight">
             <div class="row">
                 <div class="left">
                 </div>
@@ -98,32 +97,55 @@
                 <div class="left">
                 </div>
                 <div class="center">
-                    <div class="projects-container">
-                        <a href="./buscemi.html" class="project">
-                            <div class="img_left img" style="background-image:url(./img/index-page/za-left.jpg)">
+                    <div class="slider">
+                        <div class="step-container">
+                            <div class="step">
+                                01 / 05
                             </div>
-                            <div class="img_right img" style="background-image:url(./img/index-page/za-right.jpg)">
+                            <h1>Contacts for communication</h1>
+                            <div class="fields">
+                                <div class="fields_row">
+                                    <label>Name*</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fields_row">
+                                    <label>Company</label>
+                                    <input type="text">
+                                </div> 
+                                <div class="fields_row">
+                                    <label>E-mail*</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fields_row">
+                                    <label>Telephone</label>
+                                    <input type="text">
+                                </div>                                                                                                
                             </div>
-                            <h1 class="title">
-                                    ZA DESIGN
-                            </h1>
-                        </a>
-                                                 
-                        <a href="./buscemi.html" class="project active">
-                            <div class="img_left img">
+
+                            <button>
+                                OK
+                            </button>
+                        </div>
+                        <div class="step-container">
+                            <div class="step">
+                                02 / 05
                             </div>
-                            <div class="img_right img">
+                            <h1>Type of products</h1>
+                            <div class="checkboxes">
+                                <div class="checkboxes_title">
+                                    Select type
+                                </div>
                             </div>
-                            <h1 class="title">
-                                    BUSCEMI
-                            </h1>
-                        </a>
-                       
+
+                            <button>
+                                OK
+                            </button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="right">
                 </div>
-            </div>
+            </div>  
             <div class="row">
                 <div class="left">
                 </div>
@@ -131,9 +153,11 @@
                 </div>
                 <div class="right">
                 </div>
-            </div>
+            </div>  
+        </div>                
 
-            <img src="./img/scroll-down.png" id="scroll_down_arrow" class="scroll_down_arrow" atl="Scroll Down Arrow">
+
+        
         </div>
     </div>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>

@@ -1,0 +1,75 @@
+h1 {
+	font-size:2.53906rem;
+	line-height:2.53906rem;
+	margin:0;
+}
+
+p {
+	font-size:1.32812rem;
+	line-height:1.32812rem;
+	color:#c0c0c0;
+	letter-spacing:0;
+	position:absolute;
+	left:50%;
+	top:1.01562vw;
+	margin:0;
+}
+
+form {
+	color:#f2f2f0;
+	font-size:0.82031rem;
+	letter-spacing:0.02500em;
+	position:absolute;
+	bottom:0;
+
+}
+
+form label {
+	display:block;
+}
+
+form button {
+	background:#2a2a2a;
+	border:none;
+	font-size:0.70312rem;
+	color:#f2f2f0;
+	letter-spacing:0.02500em;
+	font-family:'Graphik LCG Medium';
+	padding: 1.1rem 3.2rem;
+}
+
+form button:hover {
+	cursor:pointer;
+}
+
+input, textarea {
+	background:transparent;
+	border:none;
+	
+	margin:1.1vw 0vw;
+	color:#ffffff;
+	width:15vw;
+	height:2vw;
+}
+
+textarea {
+	height:5.8vw;
+	resize: none;
+}
+
+/*input:after, textarea:after {
+	content:'';
+	display:block;
+	position:absolute;
+	bottom:0;
+	height:1px;
+	width:0;
+	opacity:0;
+	background:#2a2a2a;
+	transition:0.5s ease all;
+} 
+
+input:hover:after, textarea:hover:after {
+	width:100%;
+	opacity:1;
+}*/

@@ -1,0 +1,74 @@
+.grid .row .center {
+	font-size:0.82031rem;
+	color:#c0c0c0;
+}
+
+.contacts_title {
+	position:absolute;
+	top:-0.4%;
+}
+
+.middle {
+	position:absolute;
+	top:36.00000%;
+	left:0;
+}
+
+.careers.middle {
+	left:50%;
+}
+
+.middle h2 {
+	color:#ffffff;
+	font-size:1.32812rem;
+	letter-spacing:0.01000em;
+	margin:0;
+	margin-bottom:2.81250vw;
+
+}
+
+.middle .middle_description {
+	line-height:2;
+	font-size:0.82031rem;
+	letter-spacing:0.02500em;
+
+}
+
+.middle .middle_description a {
+	color:inherit;
+	text-decoration:none;
+}
+
+.middle .middle_description a:hover {
+	text-decoration:underline;
+}
+
+.socials {
+	position:absolute;
+	bottom:-1.6%;
+	line-height:2;
+
+}
+
+.socials a {
+	color:inherit;
+	text-decoration:none;
+	padding:0;
+}
+
+.socials a:hover {
+	text-decoration:underline;
+}
+
+.message {
+	position:absolute;
+	right:0;
+	bottom:-1.6%;
+	line-height:2;
+	color:inherit;
+}
+
+.message a {
+	text-decoration:underline;
+	
+}

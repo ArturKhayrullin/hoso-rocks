@@ -1,0 +1,62 @@
+.center {
+	overflow:hidden;
+}
+
+.slider {
+	width:500%;
+	height:100%;
+	display:flex;
+	transform:translateX(0%);
+	transition:1s ease-in-out all;
+}
+
+.slider > div {
+	width:20%;
+	height:100%;
+	position:relative;
+}
+
+.step {
+	margin:0;
+	font-size:0.82031rem;
+	color:#c0c0c0;
+	letter-spacing:0.02500em;
+	margin-bottom:2.34375vw;
+}
+
+h1 {
+	margin:0;
+	font-size:2.53906rem;
+	letter-spacing:0;
+}
+
+.fields {
+	position:absolute;
+	top:13.46939vw;
+}
+
+input[type="text"] {
+	visibility: hidden;
+}
+
+.fields .fields_row {
+	font-size:0.82031rem;
+	letter-spacing:0.02500em;
+	margin-bottom:1.79219vw;
+}
+
+button {
+	font-size:0.70312rem;
+	letter-spacing:0.02500em;
+	color:#fafafa;
+	background:#2a2a2a;
+	border:none;
+	position:absolute;
+	bottom:0;
+	font-family:'Graphik LCG Medium';
+	padding: 1.1rem 3.2rem;	
+}
+
+button:hover {
+	cursor:pointer;
+}
