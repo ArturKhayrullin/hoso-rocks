@@ -21,11 +21,13 @@ form {
 	letter-spacing:0.02500em;
 	position:absolute;
 	bottom:0;
+	top:28.54863%;
 
 }
 
 form label {
 	display:block;
+	min-width:5.19531vw;
 }
 
 form button {
@@ -36,6 +38,8 @@ form button {
 	letter-spacing:0.02500em;
 	font-family:'Graphik LCG Medium';
 	padding: 1.1rem 3.2rem;
+	position:absolute;
+	bottom:0;
 }
 
 form button:hover {
@@ -46,10 +50,12 @@ input, textarea {
 	background:transparent;
 	border:none;
 	
-	margin:1.1vw 0vw;
+	
 	color:#ffffff;
 	width:15vw;
-	height:2vw;
+	/*height:2vw;*/
+
+	outline:none;
 }
 
 textarea {
@@ -57,19 +63,26 @@ textarea {
 	resize: none;
 }
 
-/*input:after, textarea:after {
-	content:'';
-	display:block;
-	position:absolute;
-	bottom:0;
-	height:1px;
-	width:0;
-	opacity:0;
-	background:#2a2a2a;
-	transition:0.5s ease all;
-} 
+.form_row {
+	display:flex;
+	justify-content: flex-start;
+	align-items:flex-end;
+	margin-bottom:13%;
+}
 
-input:hover:after, textarea:hover:after {
-	width:100%;
-	opacity:1;
-}*/
+.form_row:last-of-type {
+	align-items:flex-start;
+}
+
+.input_wrapper,.textarea_wrapper {
+	border-bottom:1px solid rgba(42,42,42,0.5);
+	transition: all ease-in-out 0.2s;
+}
+
+.input_wrapper:hover, .textarea_wrapper:hover {
+	border-color:rgba(42,42,42,1);
+}
+
+.textarea_wrapper {
+	/*border-right:1px solid rgba(42,42,42,0.5);*/
+}

@@ -3,6 +3,7 @@
 	position:relative;
 	width:60%;
 	margin:0 auto;
+	padding-bottom:calc((100vh - 31.32812vw) / 2);
 }
 
 .block2 .our-services {

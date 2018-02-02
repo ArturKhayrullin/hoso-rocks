@@ -22,6 +22,7 @@
 	color:#c0c0c0;
 	letter-spacing:0.02500em;
 	margin-bottom:2.34375vw;
+	margin-bottom:3%;
 }
 
 h1 {
@@ -32,18 +33,43 @@ h1 {
 
 .fields {
 	position:absolute;
-	top:13.46939vw;
+	top:42.02000%;
+	bottom:0;
+	width:100%;
 }
 
-input[type="text"] {
-	visibility: hidden;
-}
 
 .fields .fields_row {
 	font-size:0.82031rem;
 	letter-spacing:0.02500em;
-	margin-bottom:1.79219vw;
+	margin-bottom:9%;
+	margin-bottom:2.5%;
+	display:flex;
+	justify-content: flex-start;
+	align-items: flex-end;
 }
+
+.fields .fields_row label {
+	min-width:5.93750vw;
+}
+
+input {
+	background:transparent;
+	border:none;
+	color:#ffffff;
+	outline:none;
+}
+
+.input_wrapper,.textarea_wrapper {
+	border-bottom:1px solid rgba(42,42,42,0.5);
+	transition: all ease-in-out 0.2s;
+}
+
+.input_wrapper:hover, .textarea_wrapper:hover {
+	border-color:rgba(42,42,42,1);
+}
+
+
 
 button {
 	font-size:0.70312rem;
@@ -54,9 +80,147 @@ button {
 	position:absolute;
 	bottom:0;
 	font-family:'Graphik LCG Medium';
-	padding: 1.1rem 3.2rem;	
+	    padding: 1.2rem 3.6rem;
 }
 
 button:hover {
 	cursor:pointer;
+}
+
+/*SLIDE 2*/
+
+.checkboxes_title {
+	font-size:1.38211rem;
+	color:#c0c0c0;
+	letter-spacing:0;
+	margin-top:-0.5rem;
+	margin-bottom:2.3rem;
+}
+
+input[type="checkbox"],input[type="radio"]  {
+	display:none;
+}
+
+.checkboxes_inputs {
+	position:relative;
+}
+
+input[type="checkbox"] + label,input[type="radio"] + label {
+	color:#6a6a6a;
+	letter-spacing:0.04em;
+	position:relative;
+	font-size:0.82031rem;
+	cursor:pointer;
+	min-width:21.73542%;
+	display:inline-block;
+} 
+
+input[type="checkbox"] + label:before,input[type="radio"] + label:before {
+	position:relative;
+	display:inline-block;
+	content:'';
+	width:0.58594rem;
+	height:0.58594rem;
+	background:#6a6a6a;
+	border-radius:50%;
+	margin-right:0.2rem;
+}
+
+input[type="checkbox"]:checked + label span,input[type="radio"]:checked + label span{
+	color:#c1c1c1;
+	text-decoration:underline;
+}
+
+input[type="checkbox"]:checked + label:before,input[type="radio"]:checked + label:before  {
+	background:#f2f2f0;
+}
+
+
+.step4 .fields {
+	width:66.66667%;
+}
+
+.slider_container {
+	padding-left:0.27344rem;
+	box-sizing:border-box;
+}
+
+.range {
+	display:flex;
+	justify-content: space-between;
+	color:#c0c0c0;
+	letter-spacing:0.02500em;
+	font-size:0.82031rem;
+	margin-bottom:1.4vw;
+}
+
+.noUi-target {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfbfbf+0,2a2a2a+100 */
+	background: #bfbfbf; /* Old browsers */
+	background: -moz-linear-gradient(left, #bfbfbf 0%, #2a2a2a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #bfbfbf 0%,#2a2a2a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #bfbfbf 0%,#2a2a2a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfbfbf', endColorstr='#2a2a2a',GradientType=1 ); /* IE6-9 */
+	height:2px;
+	box-shadow: none;
+	border:none;
+}
+
+.noUi-target * {
+	outline:none;
+}
+
+/*.noUi-target:before {
+	position:absolute;
+	width:100%;
+	background:transparent;
+	height:100px;
+	left:0;
+	top:50%;
+	transform:translateY(-50%);
+	content:'';
+	display:block;
+}*/
+
+.noUi-horizontal .noUi-handle {
+	width:15px;
+	height:15px;
+	background:#fafafa;
+	border-radius:50%;
+	top:50%;
+	transform:translateY(-50%);
+
+}
+
+.noUi-handle:before, .noUi-handle:after {
+	display:none;
+}
+
+.noUi-horizontal .noUi-tooltip {
+	background: none;
+    font-size: 0.82031rem;
+    color: #fafafa;
+    letter-spacing: 0.02500rem;
+    transform: none;
+    top: 100%;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%, 50%);
+    bottom:initial;
+    right:initial;
+    border:none;
+}
+
+.attach_file_button {
+	font-size:1.32812rem;
+	text-decoration: underline;
+	color:#f2f2f0;
+	letter-spacing:0.02500em;
+	cursor:pointer;
+}
+
+.file_types {
+	color:#c0c0c0;
+	font-size:0.82031rem;
+	margin-top:1.95312rem;
 }

@@ -1,6 +1,49 @@
 var isAnimationGoing=false;
 
 $(document).ready(function() {
+
+
+
+	var durationSlider = document.getElementById('duration_slider');
+	if (durationSlider) {
+		noUiSlider.create(durationSlider, {
+			start: [ 60 ],
+			step:1,
+			connect:true,
+			tooltips:[wNumb({ decimals: 0 })],
+			range: {
+				'min': [   60 ],
+				'max': [ 200 ]
+			}
+		});
+
+		var inputs=[document.getElementById('slider_input')];
+		console.log(inputs);
+
+		durationSlider.noUiSlider.on('update', function( values, handle ) {
+			inputs[handle].value = values[handle];
+		});
+	}
+
+	$('#say_hi_form').submit(function(e) {
+		e.preventDefault();
+		alert('Thank you. We will contact you soon.')
+	});
+
+	$('.step-container form').submit(function(e) {
+		e.preventDefault();
+		var nextPercentage = ((-100)/5*($(this).closest('.step-container').index()+1));
+		if (nextPercentage<=-100) {
+			alert('Your request has been sent. \nWe will contact you soon.\nThank you.');
+			$('.logo').click();
+			return;
+		}
+
+		console.log(nextPercentage);
+		$('.slider').css('transform','translateX('+nextPercentage+'%)');		
+
+	});
+
 $(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta >= 0) {
        
@@ -73,6 +116,9 @@ $(window).resize(function() {
 	if ($('.fullheight').height()!=$(window).height()) {
 		$('.fullheight').height($(window).height());
 	}
+
+
+
 });
 
 

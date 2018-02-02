@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/vendor/nouislider.css">
     <link rel="stylesheet" href="css/start-new.css">
 </head>
 
@@ -98,49 +98,171 @@
                 </div>
                 <div class="center">
                     <div class="slider">
-                        <div class="step-container">
+                        <div class="step-container step1">
                             <div class="step">
                                 01 / 05
                             </div>
                             <h1>Contacts for communication</h1>
-                            <div class="fields">
+                            <form class="fields" action="" method="POST">
                                 <div class="fields_row">
                                     <label>Name*</label>
-                                    <input type="text">
+                                    <div class="input_wrapper">
+                                        <input type="text">
+                                    </div>
                                 </div>
                                 <div class="fields_row">
                                     <label>Company</label>
-                                    <input type="text">
+                                    <div class="input_wrapper">
+                                        <input type="text">
+                                    </div>
                                 </div> 
                                 <div class="fields_row">
                                     <label>E-mail*</label>
-                                    <input type="text">
+                                    <div class="input_wrapper">
+                                        <input type="email">
+                                    </div>
                                 </div>
                                 <div class="fields_row">
                                     <label>Telephone</label>
-                                    <input type="text">
-                                </div>                                                                                                
-                            </div>
+                                    <div class="input_wrapper">
+                                        <input type="tel">
+                                    </div>
+                                </div>
+                                <button type="submit">
+                                    OK
+                                </button>                                                                                                                                
+                            </form>
 
-                            <button>
-                                OK
-                            </button>
+
                         </div>
-                        <div class="step-container">
+                        <div class="step-container step2">
                             <div class="step">
                                 02 / 05
                             </div>
-                            <h1>Type of products</h1>
-                            <div class="checkboxes">
-                                <div class="checkboxes_title">
-                                    Select type
-                                </div>
-                            </div>
+                            <h1>Types of products</h1>
+                            <form class="fields">
+                                <div class="checkboxes">
+                                    <div class="checkboxes_title">
+                                        Select types:
+                                    </div>
+                                    <div class="checkboxes_inputs">
+                                    <input type="checkbox" name="type" id="strategy_and_philosophy" value="Strategy and Philisophy">
+                                    <label for="strategy_and_philosophy">
+                                        <span>Strategy & Philosophy</span>
+                                    </label>
 
-                            <button>
-                                OK
-                            </button>
-                        </div>                        
+                                    <input type="checkbox" name="type" id="branding_and_identity" value="Branding and Identity">
+                                    <label for="branding_and_identity">
+                                        <span>Branding & Identity</span>
+                                    </label>
+                                    
+                                    
+                                    <input type="checkbox" name="type" id="digital_design" value="Digital Design">
+                                    <label for="digital_design">
+                                        <span>Digital Design</span>
+                                    </label>
+
+                                    
+                                    <input type="checkbox" name="type" id="web_development" value="Web-Development">             
+                                    <label for="web_development">
+                                        <span>Web-Development</span>
+                                    </label>
+                                    </div>                                                                                        
+                                </div>
+
+                                <button>
+                                    OK
+                                </button>
+                            </form>
+                        </div>    
+                        <div class="step-container step3">
+                            <div class="step">
+                                03 / 05
+                            </div>
+                            <h1>Starting Budget</h1>
+                            <form class="fields">
+                                <div class="checkboxes">
+                                    <div class="checkboxes_title">
+                                        Budget:
+                                    </div>
+                                    <div class="checkboxes_inputs">
+                                    <input type="radio" name="starting_budget" id="USD_5000_10000" value="$ 5.000 - $ 10.000">
+                                    <label for="USD_5000_10000">
+                                        <span>$ 5.000 - $ 10.000</span>
+                                    </label>
+
+                                    <input type="radio" name="starting_budget" id="USD_10000_15000" value="$ 10.000 - $ 15.000">
+                                    <label for="USD_10000_15000">
+                                        <span>$ 10.000 - $ 15.000</span>
+                                    </label>
+                                    
+                                    
+                                    <input type="radio" name="starting_budget" id="USD_15000_30000" value="$ 15.000 - $ 30.000">
+                                    <label for="USD_15000_30000">
+                                        <span>$ 15.000 - $ 30.000</span>
+                                    </label>
+
+                                    
+                                    <input type="radio" name="starting_budget" id="exclusive_budget" value="Exclusive budget">             
+                                    <label for="exclusive_budget">
+                                        <span>Exclusive budget</span>
+                                    </label>
+                                    </div>                                                                                        
+                                </div>
+
+                                <button>
+                                    OK
+                                </button>
+                            </form>
+                        </div>
+                        <div class="step-container step4">
+                            <div class="step">
+                                04 / 05
+                            </div>
+                            <h1>Desired duration</h1>
+                            <form class="fields">
+                                <div class="range">
+                                    <div>
+                                        60 days
+                                    </div>
+
+                                    <div>
+                                        200 days +
+                                    </div>
+                                </div>
+                                <div class="slider_container">
+                                    <div id="duration_slider">
+                                    </div>
+                                </div>
+
+                                <input type="text" name="duration" id="slider_input" style="display:none;">
+
+                                <button>
+                                    OK
+                                </button>
+                            </form>
+                        </div>
+                        <div class="step-container step5">
+                            <div class="step">
+                                05 / 05
+                            </div>
+                            <h1>A few words about your project</h1>
+                            <form class="fields">
+                                <div class="attach_file_button" onclick="$('#file_input').click();">
+                                    Attach file
+                                </div>
+
+                                <div class="file_types">
+                                    pdf, doc, docx
+                                </div>
+
+                                <input type="file" name="file" style="display:none;" id="file_input">
+
+                                <button>
+                                    SEND A REQUEST
+                                </button>
+                            </form>
+                        </div>                                                                                             
                     </div>
                 </div>
                 <div class="right">
@@ -166,6 +288,8 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
+    <script src="js/vendor/wNumb.js"></script>
+    <script src="js/vendor/nouislider.min.js"></script>
     <script src="js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

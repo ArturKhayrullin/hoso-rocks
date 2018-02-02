@@ -29,23 +29,23 @@
                 Meet Buro
             </div> -->
             <a href="./about.html" class="menu_item">
-                <div class="menu_number">00</div>
+                <div class="menu_number">01</div>
                 <div class="menu_text">Meet Buro</div>
             </a>            
             <a href="./workslist.html" class="menu_item">
-                <div class="menu_number">01</div>
+                <div class="menu_number">02</div>
                 <div class="menu_text">Works</div>
             </a>
             <a href="./services.html" class="menu_item">
-                <div class="menu_number">02</div>
+                <div class="menu_number">03</div>
                 <div class="menu_text">Services</div>
             </a>
             <a href="./contacts.html" class="menu_item">
-                <div class="menu_number">03</div>
+                <div class="menu_number">04</div>
                 <div class="menu_text">Contacts</div>
             </a>
             <a href="./message.html" class="menu_item">
-                <div class="menu_number">04</div>
+                <div class="menu_number">05</div>
                 <div class="menu_text">Message</div>
             </a>                                                                                            
         </div>
@@ -103,18 +103,24 @@
                 <div class="center">
                     <h1>Say Hi</h1>
                     <p>For any reason</p>
-                    <form action="#" method="POST">
+                    <form action="/" method="POST" id="say_hi_form">
                         <div class="form_row">
                             <label>Name *</label>
-                            <input type="text" name="name" required>
+                            <div class="input_wrapper">
+                                <input type="text" name="name" required>
+                            </div>
                         </div>
                         <div class="form_row">
                             <label>Email *</label>
-                            <input type="email" name="email" required>
+                            <div class="input_wrapper">
+                                <input type="email" name="email" required>
+                            </div>
                         </div>
                         <div class="form_row">
                             <label>Message</label>
-                            <textarea name="message"></textarea>
+                            <div class="textarea_wrapper">
+                                <textarea name="message"></textarea>
+                            </div>
                         </div>
 
                         <button type="submit">
