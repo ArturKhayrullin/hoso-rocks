@@ -1,0 +1,7 @@
+Name: sum nam
+Company: 123
+Email: asd@asd.rf
+Tel: asdsad
+Selected_Types: Branding and Identity
+Starting_Budget: $ 10.000 - $ 15.000
+Desired_Duration: 60.00

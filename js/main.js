@@ -26,16 +26,88 @@ $(document).ready(function() {
 	}
 
 	$('#say_hi_form').submit(function(e) {
+
 		e.preventDefault();
-		alert('Thank you. We will contact you soon.')
+		$.ajax({
+			url: './say-hi-form.php',
+			type: 'POST',
+			data: {first_name: $(this).find('[name=name]').val(),
+				   email: $(this).find('[name=email]').val(),
+				   message: $(this).find('[name=message]').val()
+				  }
+		})
+		.done(function(data) {
+			console.log(data);
+			
+		})
+		.fail(function() {
+			
+		})
+		.always(function() {
+			var thankYouLink="<a href='./thank-you.html' style='display:none;' id='thank_you_page'></a>";
+			$('body').append(thankYouLink);
+			$('#thank_you_page').click();
+		});
+		
+
 	});
 
 	$('.step-container form').submit(function(e) {
 		e.preventDefault();
 		var nextPercentage = ((-100)/5*($(this).closest('.step-container').index()+1));
 		if (nextPercentage<=-100) {
-			alert('Your request has been sent. \nWe will contact you soon.\nThank you.');
-			$('.logo').click();
+			// var thankYouLink="<a href='./thank-you.html' style='display:none;' id='thank_you_page'></a>";
+			// $('body').append(thankYouLink);
+			// $('#thank_you_page').click();
+
+			/*SLIDE 1*/
+			var name=$('.step-container input[name="name"]').val();
+			var company=$('.step-container input[name="company"]').val();
+			var email=$('.step-container input[name="email"]').val();
+			var tel=$('.step-container input[name="tel"]').val();
+			
+			/*SLIDE 2*/
+			var selectedTypes = [];
+			$('.step-container input[name="type"]:checked').map(function() {
+			            selectedTypes.push($(this).val());
+			});
+
+			/*SLIDE 3*/
+
+			var startingBudget = $('.step-container input[name="starting_budget"]:checked').val();
+
+			/*SLIDE 4*/
+			var desiredDuration = $('.step-container #slider_input').val();
+
+			/*SLIDE 5*/
+			var filePath = $('.step-container input[name="file"]')[0].files[0];
+
+			var formData = new FormData();
+			formData.append('Name',name);
+			formData.append('Company',company);
+			formData.append('Email',email);
+			formData.append('Tel',tel);
+
+			formData.append('Selected Types',selectedTypes);
+
+			formData.append('Starting Budget',startingBudget);
+
+			formData.append('Desired Duration',desiredDuration);
+
+			formData.append('fileToUpload',filePath);
+
+			$.ajax({
+			    url: './start-new-form.php',
+			    data: formData,
+			    type: 'POST',
+			    contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
+			    processData: false, // NEEDED, DON'T OMIT THIS
+
+			    success:function(data) {
+			    	console.log(data);
+			    }
+			    
+			});			
 			return;
 		}
 
@@ -87,7 +159,7 @@ $(window).bind('mousewheel', function(event) {
 	//   document.body.classList.add("animate-out");
 	// });
 
-	$('a').click(function(e) {
+	$('body').on('click','a',function(e) {
 		e.preventDefault();
 		var url=$(this).attr('href');
 		if (url.indexOf('#')>-1)

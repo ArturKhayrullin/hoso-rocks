@@ -1,0 +1,10 @@
+h1 {
+	font-size:2.73469rem;
+	letter-spacing:0;
+	line-height:1.68657;
+	margin:0;
+	position:absolute;
+	width:80%;
+	top:50%;
+	transform:translateY(-50%);
+}

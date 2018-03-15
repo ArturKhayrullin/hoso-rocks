@@ -119,23 +119,35 @@
 	display:flex;
 	align-items:center;
 	justify-content: center;
-	background-size:cover;
-	background-size:102%;
-	background-position:center center;
-	background-repeat:no-repeat;
 
+	position:relative;
 	text-decoration: none;
 	color:inherit;
 	width:50%;
 	transition:all 0.5s ease;
+	overflow:hidden;
 
 }
 
-.nav > a:hover {
-	background-size:105%;
+.nav a .bg {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;	
+	transition:all 0.5s ease-in-out;
+	opacity:0.6;
+}
+
+.nav > a:hover .bg{
+	transform:scale(1.05);
 }
 
 .nav .title {
 	font-size:1.32812rem;
 	font-family:'Graphik LCG Medium';
+	position:relative;
 }
