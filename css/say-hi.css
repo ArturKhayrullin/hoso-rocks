@@ -86,3 +86,87 @@ textarea {
 .textarea_wrapper {
 	/*border-right:1px solid rgba(42,42,42,0.5);*/
 }
+
+@media all and (max-width:768px) {
+	.grid:not(.background_grid) .row > div.center {
+		height:auto;
+		padding:0;
+		padding-left:8.44444vw;
+		padding-right:25.06667vw;
+		top:53.7%;
+/*		top:0;
+		transform:none;
+		top:77.60000vw;*/
+	}
+
+	form,
+	form button,
+	form .form_row {
+		position:relative;
+		top:initial;
+		bottom:initial;
+		left:initial;
+		right:initial;
+		width:initial;
+		height:initial;
+		margin:0;
+		padding:0;
+	}
+
+	h1 {
+		font-size:5.77778rem;
+		line-height:initial;
+		margin-bottom:7.2vw;
+	}
+
+	p {
+		font-size:2.84444rem;
+		line-height:initial;
+		top:-15.8vw;
+		left:initial;
+	}
+
+	form {
+		font-size:2.84444rem;
+		letter-spacing:0.02500em;
+	}
+
+	form label {
+		min-width:17.71111vw;
+
+	}
+
+	.input_wrapper, .textarea_wrapper {
+		left:-17.71111vw;
+		padding-left:17.71111vw;
+		position:relative;
+	}
+
+	form label, input {
+		margin-bottom:2.8vw;
+		margin-top:2.8vw;
+	}
+
+	input, textarea {
+		width:calc(48vw - 1px);
+		padding:2px;
+	}
+
+	form .form_row {
+		margin-bottom:5.8vw;
+	}
+
+	.form_row:last-of-type {
+		align-items:flex-end;
+		margin-bottom:10.9vw;
+	}
+
+	form button {
+		font-size:2.59149rem;
+		    padding: 4.67778rem 13.92222rem;
+	}
+
+	textarea {
+		height:auto;
+	}
+}

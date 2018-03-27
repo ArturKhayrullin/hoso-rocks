@@ -151,3 +151,134 @@
 	font-family:'Graphik LCG Medium';
 	position:relative;
 }
+
+@media all and (max-width:768px) {
+
+	.all_works {
+	    top: 5.1875%;
+	    z-index: 998;
+	    right: 50%;
+    transform: translateX(50%);
+	}
+
+	.side_link.navigation_top {
+		display:none;
+	}
+
+	.grid:not(.background_grid) .row > div.center {
+		position:relative;
+		top:0;
+		transform:none;
+
+		margin-top:calc((100vh - 59.82222vw) / 2);
+	}
+
+	.grid:not(.background_grid) .row:nth-of-type(2) {
+		height:auto;
+	}
+
+	.grid.fullheight {
+		height:auto;
+	}
+
+	.scroll_down_arrow {
+		display:none;
+	}
+
+	.block2 {
+		padding:0;
+		margin:0;
+		padding-top:25.5vw;
+	}
+
+	.block2 .description_title,
+	.block2 .description,
+	.block2 .description .text,
+	.block2 .project_images,
+	.block2 .description .meta .project_type,
+	.block2 .about .about_title,
+	.block2 .about .about_text
+	 {
+		margin:0;
+		padding:0;
+		display:block;
+		position:relative;
+		top:initial;
+		bottom:initial;
+		left:initial;
+		right:initial;
+	}
+
+	.block2 .description > div {
+		width:initial;
+	}
+
+	.block2 {
+		padding:0vw 8.44444vw;
+		padding-top: 25.5vw;
+	}
+
+	.block2 .description_title,
+	.block2 .description,
+	.block2 .about .about_title {
+		font-size:2.84444rem;
+		letter-spacing:0.02500em;
+		line-height:1.71875;
+		line-height:2.21875;
+
+	}
+
+	.block2 .description_title,
+	.block2 .about .about_title  {
+		margin-bottom:8.8vw;
+	}
+
+
+
+	.block2 .description .text,
+	.block2 .about .about_text {
+		font-size:3.73333rem;
+		line-height:1.80952;
+		letter-spacing:0;
+		margin-top:12.8vw;
+	}
+
+	.block2 .about .about_text {
+		margin:0;
+	}
+
+	.block2 .description .meta .project_type {
+		width:70%;
+	}	
+
+	.grid.fullheight.background_grid {
+		height:100%;
+	}
+
+	.block2 .project_images {
+		margin-top:25.5vw;
+	}
+
+	.block2 .about {
+		padding-top:25.5vw;
+		padding-bottom:25.5vw;
+		display:block;
+	}
+
+	.block2 .about .about_text {
+		width:initial;
+	}
+
+	.showcase {
+		padding:25.5vw 8.44444vw;
+	}
+
+	.showcase img {
+		width:100%;
+		margin-bottom:20%;
+	}
+
+	.nav .title {
+		font-size:3.73333rem;
+	}
+}

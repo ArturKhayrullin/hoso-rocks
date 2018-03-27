@@ -224,3 +224,63 @@ input[type="checkbox"]:checked + label:before,input[type="radio"]:checked + labe
 	font-size:0.82031rem;
 	margin-top:1.95312rem;
 }
+
+@media all and (max-width:768px) {
+	.grid:not(.background_grid) .row > div.center {
+		height:auto;
+		top:27.8%;
+		transform:none;
+	}
+
+	.step {
+		font-size:2.84444rem;
+		letter-spacing:0.02500em;
+		margin-bottom:3vw;
+	}
+
+	h1 {
+		font-size:5.77778rem;
+		width:80%;
+		margin-bottom:10.9vw;
+	}
+
+	.fields,
+	button {
+		position:relative;
+		top:initial;
+		bottom:initial;
+		left:initial;
+		right:initial;
+	}
+
+	.slider > div {
+		padding:0% 8.44444vw;
+	}
+
+	.fields .fields_row {
+		font-size:2.84444rem;
+		margin-bottom:8.5vw;
+	}
+
+	.fields .fields_row label {
+		min-width:17.31915vw;
+	}
+
+	.input_wrapper, .textarea_wrapper {
+		left:-17.3vw;
+		position:relative;
+		padding-left:17.3vw;
+	}
+
+	.fields .fields_row label,
+	input, textarea {
+		margin-bottom:2.7vw;
+		margin-bottom:2.7vw;
+	}
+
+	button {
+		margin-top:2vw;
+		font-size:2.70667rem;
+		padding: 4.6rem 13.6rem;
+	}
+}

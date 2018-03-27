@@ -8,3 +8,19 @@ h1 {
 	top:50%;
 	transform:translateY(-50%);
 }
+
+@media all and (max-width:768px) {
+	h1 {
+		font-size:5.95556vw;
+		position:relative;
+		transform:none;
+		top:0;
+		left:0;
+		margin:0 auto;
+		width:72%;
+	}
+
+	.grid:not(.background_grid) .row > div.center {
+		height:auto;
+	}
+}

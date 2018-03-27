@@ -21,3 +21,29 @@
 	top:50%;
 	transform:translateY(-50%);
 }
+
+@media all and (max-width:768px) {
+	.links_container {
+	    position:relative;
+	    left:initial;
+	    top:initial;
+	    transform:none;
+	    padding:0vw 26.16667vw;
+	}
+
+	.links_container .or {
+		display:block;
+		margin:12.88889vw 0vw;
+		font-size:2.33511rem;
+
+	}
+
+	.links_container a {
+		font-size:5.95556rem;
+		letter-spacing:0;
+	}
+
+	.grid:not(.background_grid) .row > div.center {
+		height:auto;
+	}
+}

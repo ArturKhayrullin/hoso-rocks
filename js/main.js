@@ -185,9 +185,9 @@ $(window).bind('mousewheel', function(event) {
 });
 
 $(window).resize(function() {
-	if ($('.fullheight').height()!=$(window).height()) {
-		$('.fullheight').height($(window).height());
-	}
+	// if ($('.fullheight').height()!=$(window).height()) {
+	// 	$('.fullheight').height($(window).height());
+	// }
 
 
 

@@ -30,3 +30,105 @@
 	right:0;
 	bottom:calc((100vh - 31.32812vw) / 2);
 }
+
+@media all and (max-width:768px) {
+	.grid:not(.background_grid) .row > div.center {
+		height:auto;
+		width:100%;
+		top:initial;
+		left:initial;
+		transform:none;
+	}
+
+	.grid:not(.background_grid) {
+		height:auto;
+	}
+
+	.grid .row .center h1, .grid .row .center p,.block2 .center > div, .grid:not(.background_grid) .row > div.center,
+	.block2 .become_a_part,
+	.contacts_title,
+	.middle,
+	.careers.middle,
+	.socials,
+	.message {
+		position:relative;
+		top:initial;
+		left:initial;
+		right:initial;
+		bottom:initial;
+		width:initial;
+		height:initial;
+		padding:initial;
+		margin:initial;
+	}
+	
+	
+	
+	.grid:not(.background_grid) .row > div.center, .block2{
+		padding:53vw 8vw;
+		padding-bottom:0;
+	}
+
+	.block2, .block2 .grid:not(.background_grid) .row > div.center {
+		padding-top:0;
+	}
+
+	.block2 .grid:not(.background_grid) .row > div.center {
+		padding:0;
+	}
+	
+	.block2 {
+		width:100%;
+		padding:55.82222vw 8.44444vw;
+	}
+
+	.block2 .our-services {
+		font-size:2.84444rem;
+		letter-spacing:0.02500em;
+		margin-bottom:5.3vw;
+	}
+	
+	h1 {
+		font-size:5.95556rem;
+		letter-spacing: 0.015em;
+		margin-bottom:10.6vw;
+
+	}
+
+	.pricelist .service {
+		display:block;
+		font-size:2.84444rem;
+		letter-spacing:0.02500em;
+		line-height: 1.38125;
+		width:80%;
+		margin-bottom:8.1vw;
+	}
+
+	.pricelist .service .price {
+		margin-bottom:2vw;
+	}
+
+	.pricelist {
+		margin-bottom:17.3vw;
+	}
+
+	.block2 {
+		padding-bottom: calc((100vh - 75.04105vh) / 2);
+		padding-bottom:54vw;
+	}
+
+	.block2 .positions-list {
+		font-size:5.95556rem;
+		line-height:1.7;
+		margin-bottom:14vw;
+	}
+
+	.block2 .our-services {
+		margin-bottom:8vw;
+	}
+
+	.block2 .become_a_part {
+		font-size:2.84444rem;
+
+	}
+}
