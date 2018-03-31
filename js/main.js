@@ -2,6 +2,27 @@ var isAnimationGoing=false;
 
 $(document).ready(function() {
 
+	setTimeout(function () {
+		$('.loader_logo').animate({
+			opacity: 0
+			},
+			300, function() {
+			/* stuff to do after animation is complete */
+			$('.loader img').animate({
+				opacity: 0,
+				},
+				300, function() {
+				$('.loader').animate({
+					opacity: 0,
+					},
+					1000, function() {
+						$(this).hide();
+					/* stuff to do after animation is complete */
+				});
+			});
+		});
+	}, 1000);
+
 
 
 	var durationSlider = document.getElementById('duration_slider');
@@ -159,17 +180,17 @@ $(window).bind('mousewheel', function(event) {
 	//   document.body.classList.add("animate-out");
 	// });
 
-	$('body').on('click','a',function(e) {
-		e.preventDefault();
-		var url=$(this).attr('href');
-		if (url.indexOf('#')>-1)
-			return;
-		$('body').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
-			window.location.href=url;
-		});
-		document.body.classList.add("animate-out");
+	// $('body').on('click','a',function(e) {
+	// 	e.preventDefault();
+	// 	var url=$(this).attr('href');
+	// 	if (url.indexOf('#')>-1)
+	// 		return;
+	// 	$('body').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+	// 		window.location.href=url;
+	// 	});
+	// 	document.body.classList.add("animate-out");
 
-	});
+	// });
 
 	$('.workslist_content .menu_item').hover(function() {
 		var currentItemIndex=$(this).index();

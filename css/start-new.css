@@ -225,6 +225,10 @@ input[type="checkbox"]:checked + label:before,input[type="radio"]:checked + labe
 	margin-top:1.95312rem;
 }
 
+.checkbox_row {
+	display:inline;
+}
+
 @media all and (max-width:768px) {
 	.grid:not(.background_grid) .row > div.center {
 		height:auto;
@@ -278,9 +282,72 @@ input[type="checkbox"]:checked + label:before,input[type="radio"]:checked + labe
 		margin-bottom:2.7vw;
 	}
 
+	input, textarea {
+		width:62vw;
+	}
+
 	button {
 		margin-top:2vw;
 		font-size:2.70667rem;
 		padding: 4.6rem 13.6rem;
 	}
+
+	.checkboxes_title {
+		font-size:3.73333rem;
+		margin-bottom:8.8vw;
+
+	}
+
+	input[type="checkbox"] + label, input[type="radio"] + label {
+		font-size:2.84444rem;
+	}
+
+	input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+		width:1.33333rem;
+		height:1.33333rem;
+	}
+
+	.checkbox_row {
+		display:block;
+		margin-bottom:5.5vw;
+	}
+
+	.checkboxes_inputs {
+		margin-bottom:8vw;
+	}
+
+	.step4 .fields {
+		width:initial;
+	}
+
+	.range {
+		font-size:2.84444rem;
+		margin-top: 23.4vw;
+		    margin-bottom: 8.4vw;
+	}
+
+	.noUi-horizontal .noUi-tooltip {
+		font-size:2.84444rem;
+	}
+
+	.noUi-horizontal .noUi-handle {
+		width:1.68889rem;
+		height:1.68889rem;
+	}
+
+	.slider_container {
+		margin-bottom:21vw;
+	}
+
+	.attach_file_button {
+		font-size:3.73333rem;
+		margin-top:15vw;
+	}
+
+	.file_types {
+		font-size:2.84444rem;
+		margin-bottom:11vw;
+	}
+
+
 }

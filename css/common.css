@@ -28,7 +28,7 @@
  src: url("../fonts/Exodus.otf") format("opentype");
 }
 
-.animate-in {
+/*.animate-in {
     -webkit-animation: fadeIn .5s ease-in;
     animation: fadeIn .5s ease-in;
 }
@@ -57,7 +57,7 @@
 	to {
 		transform:scale(1.2);
 	}
-}
+}*/
 
 
 
@@ -81,6 +81,55 @@ body {
 	font-family:'Graphik LCG Light';
 	color:#f2f2f0;
 
+}
+
+.loader{
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	z-index:10000;
+	background:#131313;
+	top:0px;
+	left:0px;
+}
+
+.loader .center {
+	width:7.34375vw;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+@keyframes loader_rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform:rotate(359deg);
+	}
+}
+
+.loader .center img {
+	max-width:100%;
+	position:relative;
+	animation: loader_rotate 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+.loader .center .loader_logo {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	font-family:'Exodus';
+	font-size:1.40625rem;
+	color:#f2f2f0;
+	letter-spacing:0.02500em;
 }
 
 .wrapper {
@@ -275,7 +324,7 @@ a.side_link:hover {
 
 
 .scroll_down_arrow {
-	position:absolute;
+	position:fixed;
 	width:0.35156vw;
 	left:6.28906%;
 	bottom:8.18750%;
@@ -445,5 +494,13 @@ left: 7.28906%;
 	font-size:2.68800rem;
 	bottom: 5.125%;
     left: 11.28906%;
+}
+
+.loader .center {
+	width:27.55556vw;
+}
+
+.loader .center .loader_logo {
+	font-size:5.25422rem;
 }
 }

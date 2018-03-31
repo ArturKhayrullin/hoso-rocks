@@ -80,3 +80,29 @@
 .workslist .workslist_content a:hover .menu_number {
 	opacity:1;
 }
+
+@media all and (max-width:768px) {
+	.grid:not(.background_grid) .row > div.center {
+		height:auto;
+		left:35.5%;
+		width:50%;
+	}
+
+	.workslist .background {
+		display:none;
+	}
+
+	.workslist .workslist_content {
+		position:relative;
+		top:initial;
+		bottom:initial;
+		left:initial;
+		right:initial;
+		font-size:6.23200rem;
+		transform:none;
+	}
+
+	.workslist .workslist_content > * {
+		margin-bottom:5.5vw;
+	}
+}
