@@ -60,13 +60,17 @@ input {
 	outline:none;
 }
 
+input, textarea {
+	width:15vw;
+}
+
 .input_wrapper,.textarea_wrapper {
-	border-bottom:1px solid rgba(42,42,42,0.5);
+	border-bottom:1px solid rgba(100,100,100,0.5);
 	transition: all ease-in-out 0.2s;
 }
 
 .input_wrapper:hover, .textarea_wrapper:hover {
-	border-color:rgba(42,42,42,1);
+	border-color:rgba(100,100,100,1);
 }
 
 

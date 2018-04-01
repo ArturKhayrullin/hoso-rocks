@@ -1,8 +1,5 @@
 <?php
 
-require_once(dirname(__FILE__).'/PHPMailer-master/src/PHPMailer.php');
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
 
 
 $bodytext="";
@@ -22,12 +19,11 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Check if file already exists
 if (file_exists($target_file)) {
-    // echo "Sorry, file already exists.";
-    $target_file=uniqid().$target_file;
-    // $uploadOk = 0;
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
+if ($_FILES["fileToUpload"]["size"] > 1000000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
@@ -50,15 +46,12 @@ if ($uploadOk == 0) {
 
 echo $uploadOk;
 
-$email = new PHPMailer();
-$email->Subject   = 'Buro: Start New Project';
-$email->Body      = $bodytext;
-$email->AddAddress('audiostocks@gmail.com');
+if ($uploadOk!=0) {
+    $bodytext=$bodytext."\n".'File link:'.': '.'http://hoso.pro/'.$target_file."\n";
+}
 
-if ($uploadOk!=0)
-	$email->AddAttachment($target_file);
 
-$email->Send();
+mail("audiostocks@gmail.com", 'Buro: Start New Project', $bodytext)
 
 
 ?>

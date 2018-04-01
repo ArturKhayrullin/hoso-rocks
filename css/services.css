@@ -29,6 +29,8 @@
 	position:absolute;
 	right:0;
 	bottom:calc((100vh - 31.32812vw) / 2);
+	bottom:initial;
+	top: calc((100vh - 31.32812vw) / 2);
 }
 
 @media all and (max-width:768px) {

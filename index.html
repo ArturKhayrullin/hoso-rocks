@@ -4,11 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Buro</title>
+    <title>Hoso Büro | Digital Web Design & Branding Agency</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
@@ -21,16 +37,15 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="wrapper">
     <div id="menu" class="menu fullheight" style="display:none">
         <div class="menu_content">
-<!--             <div class="menu_title">
+            <!--             <div class="menu_title">
                 Meet Buro
             </div> -->
             <a href="./about.html" class="menu_item">
                 <div class="menu_number">01</div>
                 <div class="menu_text">Meet Buro</div>
-            </a>            
+            </a>
             <a href="./workslist.html" class="menu_item">
                 <div class="menu_number">02</div>
                 <div class="menu_text">Works</div>
@@ -46,19 +61,20 @@
             <a href="./message.html" class="menu_item">
                 <div class="menu_number">05</div>
                 <div class="menu_text">Message</div>
-            </a>                                                                                            
+            </a>
         </div>
-
         <a href="#" class="privacy_policy">
             PRIVACY POLICY
         </a>
-    </div>        
-            <a class="logo" href="./">
+    </div>
+    <a class="logo" href="./" data-speed="0">
                 H.
             </a>
-            <div id="menu_toggle" class="menu_opener side_link">
-                menu
-            </div>        
+    <div id="menu_toggle" class="menu_opener side_link">
+        menu
+    </div>
+    <img src="./img/scroll-down.png" id="scroll_down_arrow" class="scroll_down_arrow" atl="Scroll Down Arrow">
+    <div class="wrapper">
         <div class="grid background_grid">
             <div class="row">
                 <div class="left">
@@ -75,7 +91,7 @@
                 </div>
                 <div class="right">
                 </div>
-            </div>  
+            </div>
             <div class="row">
                 <div class="left">
                 </div>
@@ -83,9 +99,9 @@
                 </div>
                 <div class="right">
                 </div>
-            </div>  
-        </div>                                
-        <div class="grid">
+            </div>
+        </div>
+        <div class="grid main-swipable">
             <div class="row">
                 <div class="left">
                 </div>
@@ -99,6 +115,15 @@
                 </div>
                 <div class="center">
                     <div class="projects-container">
+                        <a href="./buscemi.html" class="project">
+                            <div class="img_left img">
+                            </div>
+                            <div class="img_right img">
+                            </div>
+                            <h1 class="title">
+                                    BUSCEMI
+                            </h1>
+                        </a>
                         <a href="./za-design.html" class="project">
                             <div class="img_left img" style="background-image:url(./img/index-page/za-left.jpg)">
                             </div>
@@ -108,8 +133,7 @@
                                     ZA DESIGN
                             </h1>
                         </a>
-
-                        <a href="./cestoda.html" class="project">
+                        <a href="./cestoda.html" class="project active">
                             <div class="img_left img" style="background-image:url(./img/cestoda-case/project_img_left.jpg)">
                             </div>
                             <div class="img_right img" style="background-image:url(./img/cestoda-case/project_img_right.jpg)">
@@ -117,20 +141,7 @@
                             <h1 class="title">
                                     CESTODA
                             </h1>
-                        </a>                         
-                                                 
-                        <a href="./buscemi.html" class="project active">
-                            <div class="img_left img">
-                            </div>
-                            <div class="img_right img">
-                            </div>
-                            <h1 class="title">
-                                    BUSCEMI
-                            </h1>
                         </a>
-
-                     
-                       
                     </div>
                 </div>
                 <div class="right">
@@ -144,11 +155,8 @@
                 <div class="right">
                 </div>
             </div>
-
-            <img src="./img/scroll-down.png" id="scroll_down_arrow" class="scroll_down_arrow" atl="Scroll Down Arrow">
         </div>
     </div>
-
     <div class="loader">
         <div class="center">
             <img src="./img/loader.png" class="loader_circle">
@@ -159,20 +167,13 @@
     </div>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery.touchSwipe.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
+    <script src="js/vendor/jquery-inertiaScroll.js"></script>
     <script src="js/main.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-    window.ga = function() { ga.q.push(arguments) };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

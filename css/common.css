@@ -28,7 +28,7 @@
  src: url("../fonts/Exodus.otf") format("opentype");
 }
 
-/*.animate-in {
+.animate-in {
     -webkit-animation: fadeIn .5s ease-in;
     animation: fadeIn .5s ease-in;
 }
@@ -57,13 +57,13 @@
 	to {
 		transform:scale(1.2);
 	}
-}*/
-
-
-
-::-webkit-scrollbar { 
-    display: none; 
 }
+
+
+
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
 
 * {
 	box-sizing:border-box;
@@ -330,6 +330,7 @@ a.side_link:hover {
 	bottom:8.18750%;
 	cursor:pointer;
 	transition:0.5s all ease;
+	z-index:998;
 	/*min-width:9px;*/
 }
 
@@ -453,6 +454,7 @@ a.side_link:hover {
 
 	.project .title {
 		font-size:19.02222rem;
+		font-size:17.02222rem;
 	}
 
 	.logo {
