@@ -203,6 +203,16 @@ $(document).ready(function() {
             }
         });
 
+        $(window).bind('MozMousePixelScroll', function(event) {
+            if (event.detail >= 0) {
+
+                slideToNextProject();
+            } else {
+
+                slideToPrevProject();
+            }
+        });        
+
 
         $('.main-swipable').swipe({
             //Generic swipe handler for all directions
