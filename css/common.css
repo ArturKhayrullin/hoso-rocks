@@ -125,7 +125,7 @@ body {
 	position:absolute;
 	top:50%;
 	left:50%;
-	transform:translate(-42%, -50%);
+	transform:translate(-50%, -50%);
 	font-family:'Exodus';
 	font-size:1.40625rem;
 	color:#f2f2f0;
