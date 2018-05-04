@@ -11,7 +11,7 @@
 }
 
 .slider > div {
-	width:20%;
+	width:25%;
 	height:100%;
 	position:relative;
 }
@@ -262,7 +262,7 @@ input[type="checkbox"]:checked + label:before,input[type="radio"]:checked + labe
 	}
 
 	.slider > div {
-		padding:0% 8.44444vw;
+		padding:0% 9.78906vw;
 	}
 
 	.fields .fields_row {

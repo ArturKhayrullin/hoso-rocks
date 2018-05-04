@@ -125,7 +125,7 @@ body {
 	position:absolute;
 	top:50%;
 	left:50%;
-	transform:translate(-50%, -50%);
+	transform:translate(-42%, -50%);
 	font-family:'Exodus';
 	font-size:1.40625rem;
 	color:#f2f2f0;
@@ -461,12 +461,14 @@ a.side_link:hover {
 		font-size:7.10756rem;
 left: 7.28906%;
     top: 3.7875%;		
+    left: 9.28906%;
+    top: 3.8875%;
 	}
 
 	.side_link {
 		font-size:3.55556rem;
 		transform:none;
-		right:8.25%;
+		right:9.45%;
 	}
 
 .menu_opener {

@@ -109,7 +109,7 @@
 	
 	
 	.grid:not(.background_grid) .row > div.center, .block2{
-		padding:53vw 8vw;
+		padding:53vw 9.78906%;
 		padding-bottom:0;
 	}
 

@@ -130,7 +130,7 @@ $(document).ready(function() {
 
     $('.step-container form').submit(function(e) {
         e.preventDefault();
-        var nextPercentage = ((-100) / 5 * ($(this).closest('.step-container').index() + 1));
+        var nextPercentage = ((-100) / 4 * ($(this).closest('.step-container').index() + 1));
         if (nextPercentage <= -100) {
 
 
@@ -154,7 +154,7 @@ $(document).ready(function() {
             var desiredDuration = $('.step-container #slider_input').val();
 
             /*SLIDE 5*/
-            var filePath = $('.step-container input[name="file"]')[0].files[0];
+            // var filePath = $('.step-container input[name="file"]')[0].files[0];
 
             var formData = new FormData();
             formData.append('Name', name);
@@ -168,7 +168,7 @@ $(document).ready(function() {
 
             formData.append('Desired Duration', desiredDuration);
 
-            formData.append('fileToUpload', filePath);
+            // formData.append('fileToUpload', filePath);
 
             $.ajax({
                 url: './start-new-form.php',
